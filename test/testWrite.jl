@@ -1,6 +1,13 @@
 import  Compat.Sys: isapple
 
-readdlm("./d","k")
+function writecsv_head(fname::AbstractString, a, head=[])
+	open(fname, "w") do io
+	  writedlm(io, head, ',')
+	  writedlm(io, a, ',')
+	end #do
+end #function
+
+ writecsv_head("./d","k")
 
 info("""write(STDIN,"5")""")
 write(STDIN,"5\n")
