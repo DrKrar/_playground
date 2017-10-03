@@ -1,4 +1,4 @@
-using  Compat.Sys
+import  Compat.Sys: isapple
 
 info("""write(STDIN,"5")""")
 write(STDIN,"5\n")
