@@ -1,5 +1,7 @@
 import  Compat.Sys: isapple
 
+readdlm("./d","k")
+
 info("""write(STDIN,"5")""")
 write(STDIN,"5\n")
 x = readline()
