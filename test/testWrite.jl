@@ -1,9 +1,12 @@
+
 info("""write(STDIN,"5")""")
 write(STDIN,"5\n")
-@async( global x = readline())
+x = readline()
 print(x)
+
+Sys.iswindows()
 
 info("""write(STDIN.buffer,"5")""")
 write(STDIN.buffer,"5\n")
-@async( global y = readline())
+y = readline()
 print(y)
