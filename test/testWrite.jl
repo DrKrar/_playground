@@ -1,5 +1,6 @@
 import  Compat.Sys: isapple
 
+print("not an apple = ", !isapple())
 function writecsv_head(fname::AbstractString, a, head=[])
 	open(fname, "w") do io
 	  writedlm(io, head, ',')
