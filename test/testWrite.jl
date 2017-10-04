@@ -10,6 +10,7 @@ end #function
 
  writecsv_head("./d","k")
 
+#=
 info("""write(STDIN,"5")""")
 write(STDIN,"5\n")
 x = readline()
@@ -21,3 +22,4 @@ if  !isapple()
   y = readline()
   print("y = ", y)
 end
+=#
